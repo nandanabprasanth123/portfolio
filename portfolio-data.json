@@ -60,6 +60,24 @@
       "image": "project_ai.png",
       "github": "#",
       "live": "#"
+    },
+    {
+      "title": "Visual Detection with Explainable AI",
+      "subtitle": "Mini Project: Computer Vision & XAI",
+      "description": "Developed a neural-network-based visual classification system featuring explainable AI overlays (like Grad-CAM). Displays dynamic heatmap visualizations showing which pixel regions the CNN utilized to make its prediction.",
+      "tags": ["Deep Learning", "Grad-CAM", "Explainable AI", "Computer Vision"],
+      "image": "project_xai.png",
+      "github": "#",
+      "live": "#"
+    },
+    {
+      "title": "Pothole Detection using YOLO & Faster R-CNN",
+      "subtitle": "Micro Project: Object Detection",
+      "description": "Designed and evaluated deep learning models for detecting potholes in real-time. Conducted comparative analysis between YOLOv8 (one-stage detector) and Faster R-CNN (two-stage detector) regarding accuracy and latency.",
+      "tags": ["YOLOv8", "Faster R-CNN", "PyTorch", "OpenCV"],
+      "image": "project_pothole.png",
+      "github": "#",
+      "live": "#"
     }
   ],
   "contact": {
