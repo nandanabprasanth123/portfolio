@@ -48,6 +48,11 @@ html {
 
 body {
     background-color: var(--bg-dark);
+    background-image: radial-gradient(circle at center, rgba(7, 9, 19, 0.45) 0%, var(--bg-dark) 100%), url('ai_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: var(--text-primary);
     font-family: var(--font-body);
     line-height: 1.6;
