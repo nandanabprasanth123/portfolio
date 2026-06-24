@@ -42,17 +42,39 @@ function initializePortfolio(data) {
 
     // Populate Contact links
     const contact = data.contact;
-    document.getElementById('contact-email').href = `mailto:${contact.email}`;
-    document.getElementById('contact-email-text').textContent = contact.email;
     
-    const githubLinks = document.querySelectorAll('.github-link');
-    githubLinks.forEach(link => link.href = contact.github);
+    const phoneLink = document.getElementById('contact-phone-link');
+    const phoneText = document.getElementById('contact-phone-text');
+    if (phoneLink && phoneText) {
+        phoneLink.href = `tel:${contact.phone.replace(/\s+/g, '')}`;
+        phoneText.textContent = contact.phone;
+    }
+
+    const emailLink = document.getElementById('contact-email-link');
+    const emailText = document.getElementById('contact-email-text');
+    if (emailLink && emailText) {
+        emailLink.href = `mailto:${contact.email}`;
+        emailText.textContent = contact.email;
+    }
+
+    const githubLink = document.getElementById('contact-github-link');
+    const githubText = document.getElementById('contact-github-text');
+    if (githubLink && githubText) {
+        githubLink.href = contact.github;
+        const username = contact.github.split('github.com/')[1] || 'GitHub';
+        githubText.textContent = username;
+    }
+
+    const linkedinLink = document.getElementById('contact-linkedin-link');
+    const linkedinText = document.getElementById('contact-linkedin-text');
+    if (linkedinLink && linkedinText) {
+        linkedinLink.href = contact.linkedin;
+        linkedinText.textContent = "Nandana B Prasanth";
+    }
     
-    const linkedinLinks = document.querySelectorAll('.linkedin-link');
-    linkedinLinks.forEach(link => link.href = contact.linkedin);
-    
-    const twitterLinks = document.querySelectorAll('.twitter-link');
-    twitterLinks.forEach(link => link.href = contact.twitter);
+    // Set class references for fallback
+    document.querySelectorAll('.github-link').forEach(link => link.href = contact.github);
+    document.querySelectorAll('.linkedin-link').forEach(link => link.href = contact.linkedin);
 }
 
 // Typing Effect
