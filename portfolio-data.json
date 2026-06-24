@@ -35,33 +35,6 @@
   ],
   "projects": [
     {
-      "title": "Autonomous Path-Finding Robot",
-      "subtitle": "Robotics & Python",
-      "description": "Designed and simulated an autonomous maze-solving robot using Python. Integrated pathfinding algorithms (A* & Dijkstra) to calculate the shortest path, bypassing complex obstacles dynamically.",
-      "tags": ["Robotics", "Python", "A* Algorithm", "Simulation"],
-      "image": "project_robotics.png",
-      "github": "#",
-      "live": "#"
-    },
-    {
-      "title": "Custom Relational DBMS",
-      "subtitle": "Database Management Systems & C",
-      "description": "Developed a lightweight command-line Database Management System in C. Features indexing, custom file storage format, query execution, and basic CRUD operations optimized for low resource footprint.",
-      "tags": ["DBMS", "C Language", "Data Structures", "File I/O"],
-      "image": "project_dbms.png",
-      "github": "#",
-      "live": "#"
-    },
-    {
-      "title": "AI Chatbot & Assistant",
-      "subtitle": "Artificial Intelligence & Python",
-      "description": "Created a smart conversational assistant using Natural Language Processing (NLP) in Python. The bot queries local DBMS records to provide intelligent recommendations based on user inquiries.",
-      "tags": ["AI", "NLP", "Python", "SQLite"],
-      "image": "project_ai.png",
-      "github": "#",
-      "live": "#"
-    },
-    {
       "title": "Visual Detection with Explainable AI",
       "subtitle": "Mini Project: Computer Vision & XAI",
       "description": "Developed a neural-network-based visual classification system featuring explainable AI overlays (like Grad-CAM). Displays dynamic heatmap visualizations showing which pixel regions the CNN utilized to make its prediction.",
