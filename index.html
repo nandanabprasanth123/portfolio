@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio of Nandana B Prasanth - Computer Science with Artificial Intelligence Student. Specializing in AI, Robotics, Coding, and Database Management Systems.">
+    <meta name="author" content="Nandana B Prasanth">
+    
+    <!-- Title -->
+    <title>Nandana B Prasanth | Computer Science & AI Portfolio</title>
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS Styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Interactive Background Canvas -->
+    <canvas id="background-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container">
+            <a href="#home" class="logo" id="nav-logo">
+                <i class="fas fa-brain"></i>
+                <span>NBP.AI</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active" id="link-home">Home</a></li>
+                <li><a href="#about" id="link-about">About</a></li>
+                <li><a href="#skills" id="link-skills">Skills</a></li>
+                <li><a href="#projects" id="link-projects">Projects</a></li>
+                <li><a href="#contact" id="link-contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero / Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge" id="hero-badge">
+                    <i class="fas fa-sparkles"></i> Open For Opportunities
+                </div>
+                <h1>Hi, I'm <br><span class="gradient-text" id="hero-name">Nandana B Prasanth</span></h1>
+                <div class="hero-subtitle">
+                    <span id="typing-text"></span>
+                </div>
+                <p class="hero-description" id="hero-description">
+                    Building the future with intelligent code, autonomous robotics, and optimized databases. Student of Computer Science with a specialization in Artificial Intelligence.
+                </p>
+                <div class="cta-group">
+                    <a href="#contact" class="btn btn-primary" id="cta-contact">
+                        Get In Touch <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary" id="cta-projects">
+                        View Projects <i class="fas fa-project-diagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Overview</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-info">
+                    <p id="about-text">
+                        Loading profile data...
+                    </p>
+                    <p>
+                        Through hands-on projects, I have developed solid foundational expertise in Database Management Systems (DBMS), algorithmic design in C/Java/Python, and robotic automation architectures. I strive to combine robust software engineering principles with cognitive intelligence algorithms.
+                    </p>
+                </div>
+                
+                <div class="about-card glass-panel" id="stats-panel">
+                    <div class="about-stat">
+                        <div class="stat-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="stat-text">
+                            <h4>Education</h4>
+                            <p>B.Tech in Computer Science (AI)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stat">
+                        <div class="stat-icon">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
+                        <div class="stat-text">
+                            <h4>Location</h4>
+                            <p>India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stat">
+                        <div class="stat-icon">
+                            <i class="fas fa-circle-nodes"></i>
+                        </div>
+                        <div class="stat-text">
+                            <h4>Interests</h4>
+                            <p>Robotics, DBMS, Neural Nets</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Core Competencies</span>
+                <h2 class="section-title">My Skills</h2>
+            </div>
+            
+            <div class="skills-grid" id="skills-container">
+                <!-- Dynamically loaded from JSON -->
+                <div style="grid-column: 1/-1; text-align: center; color: var(--text-muted);">
+                    <i class="fas fa-spinner fa-spin"></i> Loading Skills Database...
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio Showcase</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            
+            <div class="projects-grid" id="projects-container">
+                <!-- Dynamically loaded from JSON -->
+                <div style="grid-column: 1/-1; text-align: center; color: var(--text-muted);">
+                    <i class="fas fa-spinner fa-spin"></i> Retrieving Projects Repository...
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-card glass-panel">
+                    <div class="contact-logo">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <h3>Let's Collaborate</h3>
+                    <p>I am always excited to discuss new projects, intelligent automation ideas, database designs, or internship opportunities.</p>
+                    
+                    <a href="#" class="contact-email-btn" id="contact-email">
+                        <i class="far fa-envelope"></i>
+                        <span id="contact-email-text">nandana.b.prasanth@example.com</span>
+                    </a>
+                    
+                    <div class="contact-socials">
+                        <a href="#" class="social-circle github github-link" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-circle linkedin linkedin-link" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-circle twitter twitter-link" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Nandana B Prasanth. All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core App Logic -->
+    <script src="app.js"></script>
+</body>
+</html>
