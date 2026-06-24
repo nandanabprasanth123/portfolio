@@ -4,7 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
         initializePortfolio(portfolioData);
     } else {
         console.error('Error: portfolioData is not defined in data.js');
-        document.getElementById('profile-name').textContent = "Nandana B Prasanth";
+        const profileName = document.getElementById('profile-name');
+        if (profileName) {
+            profileName.textContent = "Nandana B Prasanth";
+        }
     }
 
     // Setup interactive background canvas
@@ -18,9 +21,20 @@ function initializePortfolio(data) {
     const personal = data.personal;
     
     // Set personal information
-    document.getElementById('profile-name').textContent = personal.name;
-    document.getElementById('hero-name').textContent = personal.name;
-    document.getElementById('about-text').textContent = personal.about;
+    const profileName = document.getElementById('profile-name');
+    if (profileName) {
+        profileName.textContent = personal.name;
+    }
+    
+    const heroName = document.getElementById('hero-name');
+    if (heroName) {
+        heroName.textContent = personal.name;
+    }
+    
+    const aboutText = document.getElementById('about-text');
+    if (aboutText) {
+        aboutText.textContent = personal.about;
+    }
     
     // Init Typing Effect
     initTypingEffect([
@@ -76,6 +90,7 @@ function initializePortfolio(data) {
 // Typing Effect
 function initTypingEffect(words) {
     const target = document.getElementById('typing-text');
+    if (!target) return;
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -112,6 +127,7 @@ function initTypingEffect(words) {
 // Skills Renderer
 function populateSkills(categories) {
     const container = document.getElementById('skills-container');
+    if (!container) return;
     container.innerHTML = ''; // Clear fallback
 
     categories.forEach(category => {
@@ -164,6 +180,7 @@ function populateSkills(categories) {
 // Projects Renderer
 function populateProjects(projects) {
     const container = document.getElementById('projects-container');
+    if (!container) return;
     container.innerHTML = '';
 
     projects.forEach(project => {
