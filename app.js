@@ -1,15 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Dynamic content loading
-    fetch('portfolio-data.json')
-        .then(response => response.json())
-        .then(data => {
-            initializePortfolio(data);
-        })
-        .catch(error => {
-            console.error('Error loading portfolio data:', error);
-            // Fallback content in case JSON fails to load
-            document.getElementById('profile-name').textContent = "Nandana B Prasanth";
-        });
+    if (typeof portfolioData !== 'undefined') {
+        initializePortfolio(portfolioData);
+    } else {
+        console.error('Error: portfolioData is not defined in data.js');
+        document.getElementById('profile-name').textContent = "Nandana B Prasanth";
+    }
 
     // Setup interactive background canvas
     initNeuralBackground();
